@@ -1,3 +1,3 @@
 # Pac-Man
 
-Nachbau des frühen Pac-Mans mit leicht veränderter Grafik und Spielsystem.
+Clone of early Pac-Man with slightly changed graphics and game structure.
