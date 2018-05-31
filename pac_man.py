@@ -281,6 +281,9 @@ while True:
                 tiles.remove(oldtiles[i])
             del oldtiles[:]
 
+
+        for i in range(len(enemy))-1, -1, -1):
+            del enemy[i]
             
         while points < len(pointlist)-minuspoint+oldpoints and leben > 0: ###########Spielschleife
             sleep(0.1)
