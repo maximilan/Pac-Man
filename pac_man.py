@@ -265,7 +265,6 @@ while True:
         pointtext = c.create_text(WIDTH+30, 550, text='', fill='white', font = ('Bitstream Vera Sans', 30))
         c.create_text(WIDTH+30, 700, text='Life', fill='white', font = ('Bitstream Vera Sans', 30))
         lebentext = c.create_text(WIDTH+30, 750, text='', fill='white', font = ('Bitstream Vera Sans', 30))
-        makeenemy()
         kill = False
 
         player() #######Player wird initialisiert
@@ -282,9 +281,9 @@ while True:
             del oldtiles[:]
 
 
-        for i in range(len(enemy))-1, -1, -1):
+        for i in range(len(enemy)-1, -1, -1):
             del enemy[i]
-            
+        makeenemy()    
         while points < len(pointlist)-minuspoint+oldpoints and leben > 0: ###########Spielschleife
             sleep(0.1)
             textfunc()
